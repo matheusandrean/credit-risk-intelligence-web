@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#41006c" />
+  <meta name="description" content="Case de portfólio: inteligência de crédito, inadimplência, risco e cobrança com dados 100% sintéticos." />
+  <title>Credit Risk Intelligence | Case interativo</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a href="#visao" class="brand" aria-label="Credit Risk Intelligence">
+        <span class="brand-glyph"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 18.5 8.1 12l4 3.8L21 5" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.5 5H21v5.5" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span><strong>CRI<span class="brand-dot">.</span></strong><small>Credit Risk Intelligence</small></span>
+      </a>
+      <div class="sidebar-kicker">WORKSPACE / PORTFÓLIO</div>
+      <nav class="nav" aria-label="Navegação do case">
+        <button class="nav-item active" data-page="visao"><span class="nav-icon">◈</span> Visão executiva <span class="nav-number">01</span></button>
+        <button class="nav-item" data-page="risco"><span class="nav-icon">◎</span> Carteira & risco <span class="nav-number">02</span></button>
+        <button class="nav-item" data-page="originacao"><span class="nav-icon">↗</span> Originação <span class="nav-number">03</span></button>
+        <button class="nav-item" data-page="safras"><span class="nav-icon">▦</span> Análise de safras <span class="nav-number">04</span></button>
+        <button class="nav-item" data-page="cobranca"><span class="nav-icon">◉</span> Cobrança & perdas <span class="nav-number">05</span></button>
+        <button class="nav-item" data-page="metodologia"><span class="nav-icon">≡</span> Metodologia <span class="nav-number">06</span></button>
+      </nav>
+      <div class="sidebar-bottom"><span class="live-circle"></span><span>Ambiente demonstrativo<br/><strong>Sem dados reais</strong></span></div>
+    </aside>
+    <div class="main-area">
+      <header class="topbar">
+        <button id="menuButton" class="hamburger" aria-label="Abrir ou fechar menu">☰</button>
+        <div class="breadcrumb">INTELLIGENCE <span>/</span> <strong id="breadcrumbPage">VISÃO EXECUTIVA</strong></div>
+        <div class="topbar-right"><span class="topbar-sim">● 100% SINTÉTICO</span><a href="#metodologia" id="methodLink" class="topbar-link">Sobre os dados ↗</a></div>
+      </header>
+      <main class="content">
+        <section class="intro">
+          <div class="eyebrow"><span class="accent-bar"></span> PORTFÓLIO ANALÍTICO · CRÉDITO, RISCO & COBRANÇA</div>
+          <div class="intro-title-row"><div><h1 id="pageTitle">Visão executiva<span class="period">.</span></h1><p id="pageDescription">Panorama da carteira, qualidade do crédito e exposição financeira em uma única visão.</p></div><div class="intro-badge"><span class="badge-dot"></span> Simulação educacional</div></div>
+        </section>
+        <section class="filterbar" aria-label="Filtros do relatório"><div class="filterlabel"><span class="filtericon">☷</span> FILTROS <span class="filters-caption">aplicados a todos os painéis</span></div><div class="filters"><label>Competência<select id="monthFilter" aria-label="Competência"></select></label><label>Produto<select id="productFilter" aria-label="Produto"></select></label><label>UF<select id="ufFilter" aria-label="Unidade federativa"></select></label><button id="clearFilters" class="clear-filters" type="button" title="Redefinir filtros">↺ <span>Limpar</span></button></div></section>
+        <section id="dashboard" aria-live="polite"><div class="loading"><span class="spinner"></span> Preparando informações...</div></section>
+        <footer class="footer"><div><strong>CRI / CREDIT RISK INTELLIGENCE</strong><span>Case independente · Dados exclusivamente sintéticos · Sem afiliação com instituições financeiras</span></div><span>Construído para demonstrar capacidade analítica, não para decisão de crédito.</span></footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

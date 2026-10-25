@@ -1,37 +1,38 @@
-# Credit Risk Intelligence | Portfolio Web
+# Credit Risk Intelligence — Case interativo público
 
-**Case interativo de inteligência de crédito, risco, inadimplência e cobrança.**
+Este repositório é um case de portfólio com **dados 100% sintéticos**, versão Web do painel desenvolvido no Power BI Desktop.
 
-> **Projeto educacional com dados 100% sintéticos.** Não utiliza informações bancárias reais, não é afiliado a instituições financeiras e não é um relatório Power BI Service.
+## Recursos
 
-## O que o visitante encontrará
+- Visão executiva da carteira e indicadores D30+, D90+ e ECL;
+- Composição de atraso, estágios de risco, originação, aprovação, safras e cobrança;
+- Filtros integrados de competência, produto e UF;
+- Interface responsiva inspirada em paleta roxa (sem uso de logo ou associação à marca Nubank);
+- HTML/CSS/JS puro: sem login, API privada, licença Power BI ou infraestrutura paga.
 
-- **Visão executiva:** EAD, saldo principal, ECL, D30+ e D90+.
-- **Carteira e risco:** exposição, faixas de atraso e estágios simulados.
-- **Originação:** propostas, aprovação e concessões.
-- **Safras (vintage):** evolução por coorte e meses de vida (MOB).
-- **Cobrança e perdas:** pagamentos, ações de cobrança e baixas.
-- **Metodologia:** transparência das premissas, fórmulas e limitações.
+## Como publicar gratuitamente no GitHub Pages
 
-A aplicação foi construída em HTML, CSS e JavaScript puro, com tema visual roxo e filtros por competência, produto e UF. É independente do Power BI Service; o projeto técnico correspondente é mantido separadamente em Power BI Desktop.
+1. Crie um repositório **público** novo no GitHub (`credit-risk-intelligence-web`).
+2. Faça upload do **conteúdo desta pasta `site` na raiz** do repositório. Inclua `index.html`, `app.js`, `styles.css`, `assets/` e `.nojekyll`.
+3. Vá em **Settings → Pages**, escolha **Deploy from a branch**, branch **main**, pasta **/(root)**, e salve.
+4. Aguarde o fluxo de implantação do GitHub Pages e verifique a URL informada na seção Pages. NÃO assuma um endereço antes da implantação concluir.
 
-## Publicação no GitHub Pages
+Para teste local, na pasta contendo `index.html`, rode:
 
-O site foi preparado em um pacote `Credit_Risk_Intelligence_WEB_SITE_PUBLICAR.zip`. Para concluir a implantação:
+```sh
+python -m http.server 8000
+```
 
-1. **Descompacte** o ZIP em seu computador.
-2. Na raiz deste repositório, clique em **Add file → Upload files**.
-3. Arraste **os arquivos e a pasta `assets` descompactados**, não o ZIP. `index.html`, `app.js`, `styles.css` e `assets/portfolio-data.json` precisam ficar na raiz ou nos caminhos especificados.
-4. Faça **Commit changes** na branch `main`.
-5. Em **Settings → Pages**, selecione **Deploy from a branch → main → /(root) → Save**.
-6. Aguarde a publicação e verifique o link informado pelo GitHub em **Settings → Pages**.
+E abra `http://localhost:8000`.
 
-> Importante: não transfira dados corporativos, credenciais ou dados pessoais reais para este repositório público.
+## Fonte dos dados
+
+Gerado a partir do pacote `Credit_Risk_Intelligence_v2_Nu_Style_COMPLETO.zip` pelo script `tools/build_public_data.py` (fornecido separadamente no pacote de autoria). O site publica apenas séries **agregadas** por mês/produto/UF/estágio/faixa de atraso/safra, não dados por cliente, contrato ou proposta.
+
+Importante: agregação não torna informações reais automaticamente anônimas; neste projeto, todos os dados de origem já são sintéticos.
 
 ## Limitações
 
-As métricas e cenários são simulações ilustrativas. Indicadores de risco e perdas esperadas não são modelos prudenciais ou contábeis calibrados; as curvas vintage têm limitações metodológicas. O case demonstra técnicas de analytics, não recomenda decisões de crédito.
+É uma simulação educacional. O cálculo de saldo pode divergir de um método amortizativo Price exato; PD, LGD, EAD e ECL são hipóteses sintéticas e não constituem modelos validados pelas normas contábeis ou prudenciais. As curvas vintage podem conter viés de sobrevivência. Indicadores de cobrança atribuída não implicam causalidade ou resultado incremental.
 
-## Tecnologia
-
-Power BI Desktop (projeto analítico), Python (simulação/transformação) e HTML/CSS/JavaScript (interface pública).
+Este site **não é um PBIX publicado** e não se apresenta como tal. É uma visualização Web separada, construída a partir das mesmas bases.
