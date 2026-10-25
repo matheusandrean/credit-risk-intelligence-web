@@ -2,6 +2,9 @@
 
 **Gestão de carteira, risco de crédito e inadimplência | Case de Analytics & MIS**
 
+**[Explorar o dashboard interativo](https://matheusandrean.github.io/credit-risk-intelligence-web/)** · [Ver código-fonte](https://github.com/matheusandrean/credit-risk-intelligence-web)
+
+
 Decisões de concessão, risco e cobrança não deveriam ser analisadas isoladamente. Uma carteira pode crescer em volume e, ao mesmo tempo, concentrar exposição em produtos mais arriscados, deteriorar sua qualidade ou exigir maior esforço de recuperação. O desafio está em conectar essas visões e dar contexto financeiro às métricas.
 
 O **Credit Risk Intelligence** foi desenvolvido para simular esse ambiente de decisão. O projeto reúne a jornada de crédito — da proposta à liquidação ou baixa — em uma estrutura analítica orientada à gestão da carteira. A experiência pública permite explorar os indicadores por competência, produto e unidade federativa; o projeto técnico correspondente foi estruturado em Power BI Desktop.
