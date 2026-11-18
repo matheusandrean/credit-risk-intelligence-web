@@ -1,3 +1,5 @@
+![Credit Risk Intelligence](assets/banner.svg)
+
 # Credit Risk Intelligence
 
 **Gestão de carteira, risco de crédito e inadimplência | Case de Analytics & MIS**
@@ -10,6 +12,16 @@ Decisões de concessão, risco e cobrança não deveriam ser analisadas isoladam
 O **Credit Risk Intelligence** foi desenvolvido para simular esse ambiente de decisão. O projeto reúne a jornada de crédito — da proposta à liquidação ou baixa — em uma estrutura analítica orientada à gestão da carteira. A experiência pública permite explorar os indicadores por competência, produto e unidade federativa; o projeto técnico correspondente foi estruturado em Power BI Desktop.
 
 > **Contexto:** trata-se de uma simulação de portfólio, com dados integralmente sintéticos. Os resultados não representam uma instituição financeira, uma carteira real ou o desempenho observado de qualquer empresa.
+
+## Explore o case
+
+[Escopo e dados](#escopo-da-simulação) · [Indicadores e resultados](#uma-leitura-possível-da-carteira) · [Arquitetura e execução](#arquitetura-do-projeto) · [Limitações](#limites-do-exercício)
+
+**Matheus Marcondes · Cofundador da GovernandoAI**
+
+Financial Intelligence aplicada a Analytics, com posicionamento em Data Science, GenAI Engineering, Machine Learning e Data Governance. Este dashboard é a camada analítica estática do portfólio; a implementação de ML e GenAI está no [Credit Intelligence AI](https://github.com/matheusandrean/credit-intelligence-ai).
+
+Identidade visual [provisória em azul-marinho e ciano](docs/VISUAL_IDENTITY.md), aguardando confirmação das cores oficiais da marca. Os indicadores e recortes documentados abaixo são os da simulação existente.
 
 ## O problema de negócio
 
